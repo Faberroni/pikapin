@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
               (route) => false,
             );
           },
-          icon: SvgPicture.asset("assets/menu.svg"),
+          icon: const Icon(Icons.logout),
         ),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.end,
