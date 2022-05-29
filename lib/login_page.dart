@@ -45,12 +45,12 @@ class _LoginPageState extends State<LoginPage> {
               return Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Welcome to PIKAPIN',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 36,
-                      
+                      fontSize: 32,
+                      color: Colors.black,
                     ),
                   ),
                   Padding(
