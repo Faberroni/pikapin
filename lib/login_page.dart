@@ -45,6 +45,14 @@ class _LoginPageState extends State<LoginPage> {
               return Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Text(
+                    'Welcome to PIKAPIN',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 36,
+                      
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextField(
@@ -76,7 +84,8 @@ class _LoginPageState extends State<LoginPage> {
                         final email = _email.text;
                         final password = _password.text;
                         try {
-                          await FirebaseAuth.instance.signInWithEmailAndPassword(
+                          await FirebaseAuth.instance
+                              .signInWithEmailAndPassword(
                             email: email,
                             password: password,
                           );
