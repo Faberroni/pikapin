@@ -31,8 +31,8 @@ class HomeScreen extends StatelessWidget {
           children: [
             SvgPicture.asset(
               "assets/location.svg",
-              height: 50,
-              width: 50,
+              height: 30,
+              width: 30,
             ),
           ],
         ),
