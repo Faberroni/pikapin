@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "800016700250",
+    "project_id": "aspk-mantap",
+    "storage_bucket": "aspk-mantap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800016700250:android:24796db9585999a04f1963",
+        "android_client_info": {
+          "package_name": "com.pikapin.projek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800016700250-c5c58ihiq2cmeddddmkla7bhain1opsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArNqMVCHL15U6Aoyf3FWgWbOzrLtrkw24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800016700250-c5c58ihiq2cmeddddmkla7bhain1opsr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800016700250-vodhp1co2crql67mrq8vd55ucvr29u0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
