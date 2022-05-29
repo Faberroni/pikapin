@@ -49,14 +49,14 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Explore",
+              "PIKAPIN",
               style: Theme.of(context)
                   .textTheme
                   .headline4!
                   .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
             ),
             const Text(
-              "best Outfits for you",
+              "Aman sampai tujuan",
               style: TextStyle(fontSize: 18),
             ),
             const Padding(
