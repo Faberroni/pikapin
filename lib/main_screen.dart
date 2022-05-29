@@ -1,8 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:untitled/constants/constants.dart';
 
 import 'package:untitled/categories.dart';
+import 'package:untitled/constants/route.dart';
 import 'package:untitled/new_arrival_product.dart';
 import 'package:untitled/popular_product.dart';
 import 'package:untitled/search_form.dart';
@@ -15,7 +17,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () async {
+            await FirebaseAuth.instance.signOut();
+            Navigator.of(context).pushNamedAndRemoveUntil(
+              loginRoute,
+              (route) => false,
+            );
+          },
           icon: SvgPicture.asset("assets/menu.svg"),
         ),
         title: Row(
@@ -23,10 +31,9 @@ class HomeScreen extends StatelessWidget {
           children: [
             SvgPicture.asset(
               "assets/location.svg",
-              height: 50 ,
-              width: 50 ,
+              height: 50,
+              width: 50,
             ),
-            
           ],
         ),
         actions: [
