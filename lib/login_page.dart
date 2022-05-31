@@ -53,6 +53,9 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.black,
                     ),
                   ),
+                  Image.asset(
+                    'assets/pikapin.svg',
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextField(
