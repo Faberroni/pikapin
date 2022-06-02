@@ -54,8 +54,8 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.black,
                     ),
                   ),
-                  SvgPicture.asset(
-                    'assets/pikapin.svg',
+                  Image.asset(
+                    'assets/pikapin2.png',
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
