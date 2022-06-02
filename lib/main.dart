@@ -1,4 +1,6 @@
 
+import 'dart:js';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +9,7 @@ import 'package:untitled/constants/route.dart';
 import 'package:untitled/firebase_options.dart';
 import 'package:untitled/main_screen.dart';
 import 'package:untitled/login_page.dart';
+import 'package:untitled/profile/profile_screen.dart';
 import 'package:untitled/register_page.dart';
 
 
@@ -20,6 +23,7 @@ void main() {
         loginRoute: (context) => const LoginPage(),
         registerRoute:(context) =>  const RegisterView(),
         homeRoute:(context) =>  HomeScreen(),
+        profileRoute:(context) => const ProfileScreen(),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
