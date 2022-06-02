@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:untitled/main_screen.dart';
 import 'package:untitled/profile/profile_screen.dart';
