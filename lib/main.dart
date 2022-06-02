@@ -19,7 +19,7 @@ void main() {
       routes: {
         loginRoute: (context) => const LoginPage(),
         registerRoute:(context) =>  const RegisterView(),
-        homeRoute:(context) => const HomeScreen(),
+        homeRoute:(context) =>  HomeScreen(),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
             case ConnectionState.done:
               final user = FirebaseAuth.instance.currentUser;
               if (user != null) {
-                return const HomeScreen();
+                return  HomeScreen();
               } else {
                 return const RegisterView();
               }

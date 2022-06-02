@@ -8,9 +8,13 @@ import 'package:untitled/constants/route.dart';
 import 'package:untitled/new_arrival_product.dart';
 import 'package:untitled/popular_product.dart';
 import 'package:untitled/search_form.dart';
+import 'package:untitled/custom_bottom_nav_bar.dart';
+import 'package:untitled/enums.dart';
+import 'package:untitled/body.dart';
+
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  static String routeName = "/home";
 
   @override
   Widget build(BuildContext context) {
@@ -43,32 +47,9 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(defaultPadding),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "PIKAPIN",
-              style: Theme.of(context)
-                  .textTheme
-                  .headline4!
-                  .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
-            ),
-            const Text(
-              "Aman sampai tujuan",
-              style: TextStyle(fontSize: 18),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: defaultPadding),
-              child: SearchForm(),
-            ),
-            const Categories(),
-            const NewArrivalProducts(),
-            const PopularProducts(),
-          ],
-        ),
-      ),
+      
+      body: Body(),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }
