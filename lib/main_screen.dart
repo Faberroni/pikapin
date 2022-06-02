@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
       ),
       
       body: Body(),
-      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
+      bottomNavigationBar: const CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }
