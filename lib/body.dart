@@ -32,33 +32,33 @@ class Body extends StatelessWidget {
             const Categories(),
             const NewArrivalProducts(),
             const PopularProducts(),
-          ProfilePic(),
-          SizedBox(height: 20),
-          ProfileMenu(
-            text: "My Account",
-            icon: "assets/user.svg",
-            press: () => {},
-          ),
-          ProfileMenu(
-            text: "Notifications",
-            icon: "assets/bell.svg",
-            press: () {},
-          ),
-          ProfileMenu(
-            text: "Settings",
-            icon: "assets/settings.svg",
-            press: () {},
-          ),
-          ProfileMenu(
-            text: "Help Center",
-            icon: "assets/question.svg",
-            press: () {},
-          ),
-          ProfileMenu(
-            text: "Log Out",
-            icon: "assets/logout.svg",
-            press: () {},
-          ),
+          // const ProfilePic(),
+          // SizedBox(height: 20),
+          // ProfileMenu(
+          //   text: "My Account",
+          //   icon: "assets/user.svg",
+          //   press: () => {},
+          // ),
+          // ProfileMenu(
+          //   text: "Notifications",
+          //   icon: "assets/bell.svg",
+          //   press: () {},
+          // ),
+          // ProfileMenu(
+          //   text: "Settings",
+          //   icon: "assets/settings.svg",
+          //   press: () {},
+          // ),
+          // ProfileMenu(
+          //   text: "Help Center",
+          //   icon: "assets/question.svg",
+          //   press: () {},
+          // ),
+          // ProfileMenu(
+          //   text: "Log Out",
+          //   icon: "assets/logout.svg",
+          //   press: () {},
+          // ),
           
         ],
       ),

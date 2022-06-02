@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 import 'package:untitled/custom_bottom_nav_bar.dart';
 import 'package:untitled/enums.dart';
 
-import 'package:untitled/body.dart';
+import 'package:untitled/body2.dart';
 
 class ProfileScreen extends StatelessWidget {
   static String routeName = "/profile";
