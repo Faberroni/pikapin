@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:untitled/constants/route.dart';
 import 'package:untitled/firebase_options.dart';
 
@@ -53,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.black,
                     ),
                   ),
-                  Image.asset(
+                  SvgPicture.asset(
                     'assets/pikapin.svg',
                   ),
                   Padding(
